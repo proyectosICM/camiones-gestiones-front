@@ -2,5 +2,5 @@ import { Login } from "./Login/Login";
 
 export const routes = [
     //Redireccion
-    { path: '/', component: <Login /> },
+    { path: '/login', component: <Login /> },
 ]
