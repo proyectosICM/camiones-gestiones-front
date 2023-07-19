@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { FaUserCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { base } from "../API/apiurls";
+
 import './Login.css';
+import { base } from "../API/apiurls";
 
 const axiosInstance = axios.create({
   baseURL: base,
@@ -78,13 +79,6 @@ export function Login() {
           </Button>
         </Form>
         {error && <p>{error}</p>}
-      </div>
-
-      <div className="login-info">
-        <h2>
-          Gestiona y analiza el funcionamiento de tus baterías de camiones
-        </h2>
-        <Link to="/contratar">Contratar</Link>
       </div>
     </div>
   );
