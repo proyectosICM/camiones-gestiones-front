@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 
 import { useNavigate } from "react-router-dom";
 import { Logout } from "../Hooks/Logout";
 import { Button } from "react-bootstrap";
-import { Login } from "./Login";
+
 
 
 export function Redirect() {
 
   const rol = localStorage.getItem('rol');
   const navigate = useNavigate();
-  const empresa = localStorage.getItem('empresa');
 
 
   const handleLogout = () => {
@@ -19,26 +18,25 @@ export function Redirect() {
   };
 
   useEffect(() => {
-    let tempNav;
     switch (rol) {
       case "CONDUCTOR":
         navigate('/verificar-vehiculo');
         break;
       case "SUPERVISOR":
-        tempNav = `/menuCamion/${empresa}`;
+        navigate('/verificar-vehiculo');
         break;
       case "ADMINISTRADOR":
-        tempNav = "/welcomeAdd";
+        navigate('/verificar-vehiculo');
         break;
       case "SISTEMAS":
-        tempNav = "/welcomeasis";
+        navigate('/verificar-vehiculo');
         break;
       default:
-        tempNav = '/';
+        navigate('/verificar-vehiculo');
         break;
     }
 
-  }, [rol]);
+  }, [rol, navigate]);
 
 
   return (

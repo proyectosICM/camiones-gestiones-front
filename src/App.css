@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+/* MENU */
+.entero {
+  background: #000;
+  height: 100%;
+  border: 0.2px solid #000
+}
+
+.menu {
+  width: 80%;
+  height: 25%;
+  margin: 2% auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid #E5E7E9; */
+  border: 2px solid #282c34;
+  border-radius: 1%;
+}
+
+.item-Menu {
+  width: 100%;
+  max-width: 300px;
+  margin: 0.02%;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

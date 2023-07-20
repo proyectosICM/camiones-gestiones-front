@@ -1,6 +1,6 @@
 import './App.css';
 import { Welcome } from './Login/Welcome';
-import { Route, Routes, BrowserRouter as Router, Navigate, useNavigate } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router, Navigate } from "react-router-dom";
 import { routes } from './routes';
 import { Login } from './Login/Login';
 import { useEffect, useState } from 'react';
