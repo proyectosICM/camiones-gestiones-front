@@ -31,7 +31,7 @@ export function Welcome() {
       localStorage.setItem("empresa", info.empresasModel.id);
       localStorage.setItem("trabajador", info.id_tra);
     }
-    if (rol !== undefined) {
+    if (rol !== null) {
       navigate("/redirect");
     }
   }, [ListarInfo, token, info, navigate, rol]);

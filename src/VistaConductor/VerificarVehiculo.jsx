@@ -6,9 +6,7 @@ import QRScanner from "../Common/QRScanner";
 
 export function VerificarVehiculo() {
   const navigate = useNavigate();
-  const handleLogout = () => {
-    Logout(navigate);
-  };
+
 
   const handleSelectCamion = () => {
     navigate('/menu-camiones')
@@ -21,7 +19,7 @@ export function VerificarVehiculo() {
 
       <Button variant="primary">Simular lectura de QR</Button>
       <Button variant="primary" onClick={handleSelectCamion}>Seleccionar un bus de la lista</Button>
-      <Button variant="primary" onClick={handleLogout}>
+      <Button variant="primary" onClick={() => Logout(navigate)}>
         Cerrar Sesion
       </Button>
     </>
