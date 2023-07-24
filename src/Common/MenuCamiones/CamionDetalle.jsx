@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useListarElementos } from "../../Hooks/CRUDHook";
 import { camionesURL } from "../../API/apiurls";
+import { VerChecklist } from "./../../VistaMecanico/VerCheckList";
 
 export function CamionDetalle() {
   const navigate = useNavigate();
@@ -62,10 +63,10 @@ export function CamionDetalle() {
         </Button>
       ) : (
         <>
-          <Button onClick={() => navigate("/ver-checklist")}>
-            Ver CheckList de conductor
-          </Button>
-          <Button>Realizar CheckList Avanzado</Button>
+          <VerChecklist />
+          {/*
+           <Button onClick={() => navigate("/checklist-avanzado")}>Realizar CheckList Avanzado</Button>
+ */}
         </>
       )}
     </div>

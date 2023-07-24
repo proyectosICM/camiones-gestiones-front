@@ -29,10 +29,16 @@ export function VerChecklist() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleBack}>
+    {/*
+          <Button variant="primary" onClick={handleBack}>
         Atras
       </Button>
+      <Button variant="primary" onClick={() => navigate('/revisar-cheklist-conductor')}>
+        Volver al menu
+      </Button>
       <h1>sds</h1>
+    */}
+
       <Table striped bordered hover>
         <thead>
           <th>Dia</th>
@@ -49,7 +55,7 @@ export function VerChecklist() {
                 <td>{clc.camionesModel.placa}</td>
                 <td>
                   <Button variant="primary" onClick={() => CLCDeta(clc.id)}>Ver Cheklist de Conductor</Button>
-                  <Button variant="success">Realizar Cheklist avanzado</Button>
+                  <Button variant="success" onClick={() => navigate("/checklist-avanzado")}>Realizar Cheklist avanzado</Button>
                 </td>
               </tr>
             ))}

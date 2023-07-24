@@ -1,6 +1,6 @@
 export const tables = [
     {
-      titulo: "Llantas",
+      titulo: "llantas",
       datos: [
         {
           nombre: "Revisar ajuste",
@@ -17,7 +17,7 @@ export const tables = [
       ],
     },
     {
-      titulo: "Motor",
+      titulo: "motor",
       datos: [
         {
           nombre: "Niveles de Motor",
@@ -34,11 +34,11 @@ export const tables = [
       ],
     },
     {
-      titulo: "Sistema Electrico",
+      titulo: "sistemaElectrico",
       datos: [
         {
           nombre: "Luces",
-          atributo: "Luces",
+          atributo: "luces",
         },
         {
           nombre: "Sistema de carga",
@@ -63,7 +63,7 @@ export const tables = [
       ],
     },
     {
-      titulo: "Transmision",
+      titulo: "transmision",
       datos: [
         {
           nombre: "Embrague",
@@ -83,12 +83,12 @@ export const tables = [
         },
         {
           nombre: "Ruidos Anormales",
-          atributo: "RuidosAnormales"
+          atributo: "ruidosAnormalesT"
         }
       ],
     },
     {
-      titulo: "Direccion",
+      titulo: "direccion",
       datos: [
         {
           nombre: "Seryo",
@@ -109,7 +109,7 @@ export const tables = [
       ],
     },
     {
-      titulo: "Frenos",
+      titulo: "frenos",
       datos: [
         {
           nombre: "Limpieza y regulacion",
@@ -126,7 +126,7 @@ export const tables = [
       ],
     },
     {
-      titulo: "Suspension",
+      titulo: "suspension",
       datos: [
         {
           nombre: "Muelles, Bolsas de aire",
@@ -143,7 +143,7 @@ export const tables = [
       ],
     },
     {
-      titulo: "Cabina",
+      titulo: "cabina",
       datos: [
         {
           nombre: "Carroceria: Parabrisas, puertas, chapas, asientos",

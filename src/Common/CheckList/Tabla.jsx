@@ -21,7 +21,7 @@ export function Tabla({ titulo, datos }) {
           <tbody>
             {datos.map((c, index) => (
               <tr key={index}>
-                <td>{c}</td>
+                <td>{c.nombre}</td>
                 <td>
                   <Button variant="success">v</Button>
                   <Button variant="danger">x</Button>

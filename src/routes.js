@@ -4,10 +4,12 @@ import { Redirect } from "./Login/Redirect";
 import { VerificarVehiculo } from "./VistaConductor/VerificarVehiculo";
 import { MenuCamiones } from './Common/MenuCamiones/MenuCamiones';
 import { CamionDetalle } from "./Common/MenuCamiones/CamionDetalle";
-import { CheckListConductor } from "./VistaConductor/CheckListConductor";
+
 import { RevisarCheckListConductor } from "./VistaMecanico/RevisarChekListConductor";
 import { VerChecklist } from "./VistaMecanico/VerCheckList";
 import { CLConductorDetalle } from "./Common/CheckList/CLConductorDetalle";
+import { CheckListConductor } from "./VistaConductor/CheckListConductor";
+import { CheckListAvanzado } from "./Common/CheckList/CheckListAvanzado";
 
 
 
@@ -24,5 +26,6 @@ export const routes = [
 
     { path: '/revisar-cheklist-conductor', component: <RevisarCheckListConductor />},
     { path: '/ver-checklist', component: <VerChecklist />},
-    { path: '/CLConductor-detalle', component: <CLConductorDetalle />}
+    { path: '/CLConductor-detalle', component: <CLConductorDetalle />},
+    { path: '/checklist-avanzado', component: <CheckListAvanzado />}
 ]
