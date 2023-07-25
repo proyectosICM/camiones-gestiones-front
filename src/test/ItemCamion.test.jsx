@@ -5,6 +5,11 @@ jest.mock("react-router-dom", () => ({
   useNavigate: () => jest.fn(),
 }));
 
+jest.mock("../../Hooks/CRUDHook", () => ({
+  useListarElementos: jest.fn(() => jest.fn()),
+}));
+
+
 describe("ItemCamion", () => {
   test("Probando Renderizado correcto del Item", () => {
     const placa = "ABC-123";

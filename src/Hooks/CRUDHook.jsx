@@ -18,6 +18,7 @@ export function useListarElementos(url, setDatos) {
         if (error.response && error.response.status === 500) {
           // Token expirado, redirigir al inicio de sesión
           navigate("/login");
+
         } else {
           // Otro error, manejarlo adecuadamente
           console.error("Error al obtener los datos del camión z  :", error);
