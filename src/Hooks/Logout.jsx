@@ -9,5 +9,5 @@ export function Logout(navigate) {
   localStorage.removeItem("token");
   localStorage.removeItem("Username");
   localStorage.removeItem("rol");
-  //navigate("/login");
+  navigate("/login");
 }

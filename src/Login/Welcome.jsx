@@ -12,8 +12,6 @@ export function Welcome() {
   const token = localStorage.getItem("token");
   const rol = localStorage.getItem("rol");
   
-
-
   const handleLogout = () => {
     Logout(navigate);
   };

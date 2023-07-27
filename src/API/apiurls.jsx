@@ -6,7 +6,7 @@ export const infoURL = `${baseURL}usuarios/info/`
 //Camiones
 export const camionesURL = `${baseURL}camiones`
 export const camionesxhabilitados = `${baseURL}camiones/estado/`
-
+ 
 //CheckList
 export const checkListxcamionURL = `${baseURL}checkList/xcamion/`
 export const checkListURL = `${baseURL}checkList`;

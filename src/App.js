@@ -29,14 +29,14 @@ function App() {
         {/*token && <NavBarSelect />*/}
         <div className="App">
           <Routes>
-            {/*
-                    <Route
+
+            <Route
               path="/"
               element={
                 token ? <Navigate to="/welcome" /> : <Navigate to="/login" />
               }
             />
-            */}
+
             <Route path="/" element={<InicioAdministrador />} />
             <Route path="/login" element={<Login />} />
             <Route path="/welcome" element={<Welcome />} />
