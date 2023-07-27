@@ -4,6 +4,9 @@ import { Route, Routes, BrowserRouter as Router, Navigate } from "react-router-d
 import { routes } from './routes';
 import { Login } from './Login/Login';
 import { useEffect, useState } from 'react';
+import { VerificarVehiculo } from './VistaConductor/VerificarVehiculo';
+import { RevisarCheckListConductor } from './VistaMecanico/RevisarChekListConductor';
+import { InicioAdministrador } from './VistaAdministrador/InicioAdministrador';
 
 
 function App() {
@@ -26,12 +29,15 @@ function App() {
         {/*token && <NavBarSelect />*/}
         <div className="App">
           <Routes>
-            <Route
+            {/*
+                    <Route
               path="/"
               element={
                 token ? <Navigate to="/welcome" /> : <Navigate to="/login" />
               }
             />
+            */}
+            <Route path="/" element={<InicioAdministrador />} />
             <Route path="/login" element={<Login />} />
             <Route path="/welcome" element={<Welcome />} />
 

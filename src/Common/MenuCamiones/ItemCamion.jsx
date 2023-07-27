@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 export function ItemCamion({ camion }) {
   const navigate = useNavigate();
-
   const handleDetalles = () => {
     localStorage.setItem("dataCamion", camion.id);
     navigate("/camion-detalle");

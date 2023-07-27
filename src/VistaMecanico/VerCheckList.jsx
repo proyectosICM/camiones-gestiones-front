@@ -60,6 +60,15 @@ export function VerChecklist() {
               </tr>
             ))}
           <tr></tr>
+          <tr>
+                <td>22/05/55</td>
+                <td>03:15</td>
+                <td>ABC-1F0</td>
+                <td>
+                  <Button variant="primary" onClick={() => CLCDeta()}>Ver Cheklist de Conductor</Button>
+                  <Button variant="success" onClick={() => navigate("/checklist-avanzado")}>Realizar Cheklist avanzado</Button>
+                </td>
+              </tr>
         </tbody>
       </Table>
     </>

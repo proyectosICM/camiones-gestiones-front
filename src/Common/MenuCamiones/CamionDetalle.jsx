@@ -41,7 +41,7 @@ export function CamionDetalle() {
   };
 
   return (
-    <div>
+    <div className="menu">
       <Button variant="primary" onClick={handleBack}>
         Atras
       </Button>
@@ -56,7 +56,7 @@ export function CamionDetalle() {
           <h1>Cargando...</h1>
         </>
       )}
-
+ 
       {rol === "CONDUCTOR" ? (
         <Button variant="primary" onClick={handleCheckList}>
           Realizar CheckList

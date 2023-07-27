@@ -23,6 +23,11 @@ export function MenuCamiones() {
   const handleBack = () => {
     navigate("/verificar-vehiculo");
   };
+  const ca = 
+    {
+      id: 1,
+      placa: "ABC-002"
+    }
 
   return (
     <div className="entero">
@@ -38,6 +43,8 @@ export function MenuCamiones() {
           camiones.map((camion) => (
             <ItemCamion camion={camion} />
             ))}
+
+         <ItemCamion key={ca.id} camion={ca} />   
       </div>
     </div>
   );

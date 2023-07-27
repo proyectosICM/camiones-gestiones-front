@@ -3,7 +3,8 @@ import { Button, Table } from "react-bootstrap";
 
 export function Tabla({ titulo, datos }) {
   return (
-    <div>
+
+    <div className="table-responsive">
       <h1>{titulo}</h1>
       <div className="d-flex justify-content-center">
         <Table
