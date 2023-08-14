@@ -1,5 +1,10 @@
-export const base = "http://localhost:8080";
-export const baseURL = "http://localhost:8080/api/";
+// export const base = "http://localhost:8080";
+// export const baseURL = "http://localhost:8080/api/";
+
+export const base = "api-gestion-camiones-production.up.railway.app";
+export const baseURL = "api-gestion-camiones-production.up.railway.app/api/";
+
+
 //Info
 export const infoURL = `${baseURL}usuarios/info/`
 
