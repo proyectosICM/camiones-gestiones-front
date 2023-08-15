@@ -11,6 +11,10 @@ import { CLConductorDetalle } from "./Common/CheckList/CLConductorDetalle";
 import { CheckListConductor } from "./VistaConductor/CheckListConductor";
 import { CheckListAvanzado } from "./Common/CheckList/CheckListAvanzado";
 import { MenuCRUD } from "./Common/CRUD/MenuCRUD";
+import { Home } from "./Home";
+import { MenuPrueba } from "./menuprueba";
+import { VerC } from "./VerC";
+import { ClCamiones } from "./CLCamiones";
 
 
 
@@ -30,5 +34,12 @@ export const routes = [
     { path: '/CLConductor-detalle', component: <CLConductorDetalle />},
     { path: '/checklist-avanzado', component: <CheckListAvanzado />},
 
-    { path: '/menu-CRUD', component: <MenuCRUD />}
+    { path: '/menu-CRUD', component: <MenuCRUD />},
+
+
+    { path: '/Home', component: <Home />},
+    { path: '/menu', component: <MenuPrueba />},
+    { path: '/clcamiones', component: <ClCamiones />},
+    { path: '/ver/:params', component: <VerC />}
+    
 ]

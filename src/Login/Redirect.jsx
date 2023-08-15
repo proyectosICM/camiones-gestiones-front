@@ -23,7 +23,7 @@ export function Redirect() {
         navigate('/verificar-vehiculo');
         break;
       case "MECANICO":
-        navigate('/revisar-cheklist-conductor');
+        navigate('/Home');
         break;
       case "ADMINISTRADOR":
         navigate('/verificar-vehiculo');
@@ -38,7 +38,6 @@ export function Redirect() {
 
   }, [rol, navigate]);
 
-console.log(rol);
   return (
     <>
       <h1>Redirigiendo {rol}</h1>

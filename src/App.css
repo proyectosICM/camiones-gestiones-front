@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -74,4 +75,29 @@
 
 .table-responsive {
   overflow-x: auto;
+}
+
+.camionesMenu-contenedor {
+  width: 80%;
+  height: 25%;
+  margin: 2% auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #E5E7E9;
+  border-radius: 1%;
+}
+
+.item-Menu {
+  width: 300px;
+  margin: auto;
+}
+
+.tabla-larga {
+  width: 100%;
+  margin: 35px auto;
+  overflow-x:scroll;
 }
