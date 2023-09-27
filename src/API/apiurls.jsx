@@ -1,5 +1,5 @@
-export const base = "http://localhost:8080";
-export const baseURL = "http://localhost:8080/api/";
+export const base = "http://gestioncamapi-production.up.railway.app";
+export const baseURL = "http://gestioncamapi-production.up.railway.app/api/";
 
 //export const base = "https://api-gestion-camiones-production.up.railway.app";
 //export const baseURL = "https://api-gestion-camiones-production.up.railway.app/api/";
