@@ -8,6 +8,7 @@ import { ClCamiones } from "./CLCamiones";
 import { SelecionarCamion } from "./SelecionarCamion";
 import { camionesURL } from "./API/apiurls";
 import { Historial } from "./Historial";
+import { CLExcel } from "./CLExcel";
 
 export function VerC() {
   const { params } = useParams();
@@ -27,6 +28,9 @@ export function VerC() {
       case "historial":
         setPage(<Historial tc="carreta" url={camionesURL} />);
         break;
+      case "CLExcel":
+        setPage(<CLExcel />);
+        break
       default:
         setPage(<Prueba2 />);
         break;

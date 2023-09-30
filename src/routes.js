@@ -15,6 +15,7 @@ import { Home } from "./Home";
 import { MenuPrueba } from "./menuprueba";
 import { VerC } from "./VerC";
 import { ClCamiones } from "./CLCamiones";
+import { CLExcel } from "./CLExcel";
 
 
 
@@ -40,6 +41,7 @@ export const routes = [
     { path: '/Home', component: <Home />},
     { path: '/menu', component: <MenuPrueba />},
     { path: '/clcamiones', component: <ClCamiones />},
-    { path: '/ver/:params', component: <VerC />}
-    
+    { path: '/ver/:params', component: <VerC />},
+
+    { path: '/CLExcel', component: <CLExcel />}
 ]

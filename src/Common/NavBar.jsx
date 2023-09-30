@@ -45,7 +45,7 @@ export function NavBar({ pr }) {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> 
 
       {/* Contenido del SliderBar */}
       <div className={`slider-bar ${sliderBarOpen ? "open" : ""}`}>

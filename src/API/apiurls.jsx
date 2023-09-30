@@ -1,5 +1,5 @@
-export const base = "http://gestioncamapi-production.up.railway.app";
-export const baseURL = "http://gestioncamapi-production.up.railway.app/api/";
+export const base = "https://gestioncamapi-production.up.railway.app";
+export const baseURL = "https://gestioncamapi-production.up.railway.app/api/";
 
 //export const base = "https://api-gestion-camiones-production.up.railway.app";
 //export const baseURL = "https://api-gestion-camiones-production.up.railway.app/api/";

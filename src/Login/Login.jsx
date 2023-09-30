@@ -10,7 +10,7 @@ import { useListarElementos } from "../Hooks/CRUDHook";
 
 const axiosInstance = axios.create({
   baseURL: base,
-  withCredentials: true,
+
 });
 
 
