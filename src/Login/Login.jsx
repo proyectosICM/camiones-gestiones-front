@@ -35,7 +35,7 @@ export function Login() {
       localStorage.setItem("Username", Username);
       navigate("/welcome");
     } catch (error) {
-      setError("Error en la autenticación");
+      setError("Error en la autenticación"); 
       console.log(error);
     }
   };
